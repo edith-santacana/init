@@ -1,0 +1,5 @@
+Q15. Make the intra.42.fr address reroute to 46.19.122.85
+In the file /etc/hosts, add the following content on the last line:
+46.19.122.85	intra.42.fr
+
+Then: >>ping intra.42.fr

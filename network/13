@@ -1,0 +1,10 @@
+ Thanks to the previous question and the reverse DNS find the name of your host
+
+Previous command = ifconfig en0 | grep "inet "
+Reverse DNS lookup:
+	nslookup [ip address] or host [ip address]
+
+nslookup >> DNS
+didi.com		=		71.10.136.03
+			--forward->
+			<-reverse--

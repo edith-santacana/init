@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# 02.a
+interface="en0"
+a=`ifconfig ${interface} | grep "broadcast"| awk '{print $6}'`
+echo $a
+
+# 02.b
+nmap -sP ${a}/24
