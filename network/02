@@ -1,3 +1,7 @@
+# Q2 - Identify and display the Ethernet interface characteristics:
+# (a) Identify broadcast address
+# (b) Identify all IP adresses which are part of the same subnet
+
 #!/bin/bash
 
 # 02.a
@@ -6,4 +10,9 @@ a=`ifconfig ${interface} | grep "broadcast"| awk '{print $6}'`
 echo $a
 
 # 02.b
-nmap -sP ${a}/24
+nmap -sn ${a}/16
+
+# Nmap (Network Mapper) is a free and open-source network scanner.
+# Nmap is used to discover hosts and services on a computer network 
+# by sending packets and analyzing the responses.
+# This does a simple ping scan in the entire subnet to see which hosts are online.

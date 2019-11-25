@@ -1,5 +1,5 @@
 # Identify the MAC address of the Wi-Fi card
 #!/bin/bash
 interface="en0"
-a=`ifconfig ${interface} | grep "ether"| awk '{print $2}'`
+a=`ifconfig ${interface} | grep "ether " | awk '{print $2}'`
 echo $a

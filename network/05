@@ -1,6 +1,6 @@
 # Identify the IP address of the DNS that responds to the following url: slash16.org
 #!/bin/bash
-nslookup slash16.org
+nslookup slash16.org | grep "Server" | awk '{print $2}'
 
 # http://osxdaily.com/2011/06/03/get-dns-server-ip-command-line-mac-os-x/
 

@@ -1,5 +1,9 @@
  Thanks to the previous question and the reverse DNS find the name of your host
 
+Answer: e1z3r3p7.42.us.org
+>> 7.3.113.10.in-addr.arpa domain name pointer e1z3r3p7.42.us.org.
+
+
 Previous command = ifconfig en0 | grep "inet "
 Reverse DNS lookup:
 	nslookup [ip address] or host [ip address]
