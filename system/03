@@ -1,5 +1,6 @@
 #Q3. What file has to be modified to make it permanent?
 
+#!/bin/bash
 We need to edit a file called /etc/hostname:
     >> vi /etc/hostname
 
