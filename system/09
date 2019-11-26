@@ -1,0 +1,5 @@
+# Q9. What command lets you know who is connected to the System?
+#!/bin/bash
+who
+
+#https://www.linuxquestions.org/questions/linux-newbie-8/how-can-i-know-the-users-connected-to-my-system-670577/

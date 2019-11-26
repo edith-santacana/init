@@ -1,0 +1,12 @@
+#Q4. What command gives you the time since your system was last booted?
+
+#!/bin/bash
+last reboot
+
+# uptime https://www.cyberciti.biz/faq/how-do-you-find-the-uptime-of-a-linux-server/
+# 
+# uptime shows the amount of time that has passed since the system has been booted 
+# or how long the system has been running. It does not tell you the system clock 
+# or system boot time.
+# System boot time information is stored /var/run/wtmp file.
+# last reboot will show a log of all reboots since the log file was created.

@@ -1,0 +1,6 @@
+#Q19. List all services which are started at boot time and name this kind of services
+
+#!/bin/bash
+systemctl list-units --type service --all
+
+# https://askubuntu.com/questions/912216/16-04-command-to-list-all-services-started-on-boot

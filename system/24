@@ -1,0 +1,4 @@
+Q24- Find the command that list all packages
+
+#!/bin/bash
+apt list --installed

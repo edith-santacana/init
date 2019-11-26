@@ -1,0 +1,5 @@
+#Q10. Name the command that lists the partition tables of drives?
+#!/bin/bash
+sudo fdisk -l
+
+# https://www.binarytides.com/linux-command-check-disk-partitions/

@@ -1,0 +1,7 @@
+Q23- Find the command that add a new local user
+
+#!/bin/bash
+sudo adduser new_user_name
+
+# https://linuxize.com/post/how-to-create-a-sudo-user-on-debian/
+# Check for usermod: to grant user with sudo access

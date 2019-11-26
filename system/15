@@ -1,0 +1,6 @@
+#Q15. Find the command that kills the background command’s process
+#!/bin/bash
+kill %1
+
+# use jobs
+# https://unix.stackexchange.com/questions/104821/how-to-terminate-a-background-process/104825

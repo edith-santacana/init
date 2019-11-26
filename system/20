@@ -1,0 +1,8 @@
+#Q20. List all existing users on the VM
+
+#!/bin/bash
+cat /etc/passwd
+awk -F: '{ print $1 }' /etc/passwd
+
+https://www.cyberciti.biz/faq/linux-list-users-command/
+https://www.linuxquestions.org/questions/linux-newbie-8/how-to-list-existing-users-337445/

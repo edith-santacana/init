@@ -1,0 +1,7 @@
+# Q12. Figure out the exact size of each folder of /var in a humanly understandable way
+# followed by the path of it.
+#!/bin/bash
+du -sh /var/*
+
+# https://www.macobserver.com/tips/mgg-answers/seeing-folders-size-terminal/
+# ‘du‘ is short for, “display disk usage statistics”

@@ -1,0 +1,5 @@
+# Q8- What file contains the RSA keys of systems that are authorized to connect via SSH?
+
+#!/bin/bash
+~/.ssh/authorized_keys
+# https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys

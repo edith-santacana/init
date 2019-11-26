@@ -1,0 +1,10 @@
+#Q3. What file has to be modified to make it permanent?
+
+We need to edit a file called /etc/hostname:
+    >> vi /etc/hostname
+
+Set new hostname: didi.com
+
+Save and close the file.
+Then we need to reboot the system or run any one of the following command:
+>> /etc/init.d/hostname.sh start OR >> invoke-rc.d hostname.sh startca

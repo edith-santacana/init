@@ -1,0 +1,10 @@
+#Q17. Find the command that allows you to connect via ssh on the VM.(In parallel with
+# the graphic session)
+
+#!/bin/bash
+ssh -p 2222 edith@localhost
+
+# Using the Internet Protocol (IP) address and password for your cloud server, 
+# log in by running the following ssh command with username@ipaddress as the argument:
+# ssh root@123.45.67.890
+# https://support.rackspace.com/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os/

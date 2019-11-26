@@ -1,0 +1,6 @@
+#Q13. Name the command that find, in real time, currently running processes
+#!/bin/bash
+top
+
+# or  ps -aux | less 
+# https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/

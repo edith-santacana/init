@@ -1,0 +1,6 @@
+#Q18. Find the command that kills ssh service
+
+#!/bin/bash
+pstree -p or htop
+kill [PID]
+# https://haydenjames.io/kill-inactive-ssh-sessions/

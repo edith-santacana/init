@@ -1,0 +1,5 @@
+#Q2. What command can you use to rename your system?
+
+hostname new_name
+
+# https://www.cyberciti.biz/faq/howto-change-my-hostname-machine-name/:q

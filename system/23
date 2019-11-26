@@ -1,0 +1,12 @@
+Q23- Explain how connect yourself as new user. (With graphic session and ssh session)
+
+#!/bin/bash
+
+We need to use the command su (switch user)
+su -l username
+The -l option makes changes the current directory to the user repo 
+Then enter the password of the user.
+
+# https://linuxize.com/post/su-command-in-linux/
+
+# From the mac terminal: ssh -p 2222 user@localhost

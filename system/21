@@ -1,0 +1,20 @@
+#Q21 - List all real users on the VM
+
+#!/bin/bash
+
+#Human users have UIDs starting at 1000, so you can use that fact to filter out the non-humans:
+#This cuts the first (username) and third (UID) colon-delimited fields from /etc/passwd, 
+#then filters for the resulting lines which end with a colon and four digits, 
+#then cuts the first (username) field from that, leaving you with a list of users with UIDs between
+#1000 and 9999.
+
+#If you have more than nine thousand users on your system, this will fail - but it's necessary to 
+#restrict the result to 4-digit UIDs in order not to catch nobody (UID 65534).
+
+cut -d: -f1,3 /etc/passwd | egrep ':[0-9]{4}$' | cut -d: -f1
+
+awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd
+
+#this filters out the 'nobody' user
+
+#https://askubuntu.com/questions/257421/list-all-human-users
