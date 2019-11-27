@@ -4,15 +4,9 @@
 # https://unix.stackexchange.com/questions/126507/bash-script-to-remove-user
 # https://linuxacademy.com/blog/linux/conditions-in-bash-scripting-if-statements/#string-based-conditions
 
-## Log in to your server via SSH.
-## Switch to the root user: sudo su - 
 ## Use the userdel command to remove the old user: userdel 'user's username'
 ## You can also delete that user's home directory and mail spool by using 
 ## the -r flag with the command: userdel -r "user's username"
-
-##Check if the user exists using getent command
-
-#!/bin/bash
 
 user_exists=$(getent passwd $1)
 

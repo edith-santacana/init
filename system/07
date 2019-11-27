@@ -1,5 +1,6 @@
+#!/bin/bash
+
 # Q7- Figure out the PID of the SSHD service
 
-#!/bin/bash
 cat /var/run/sshd.pid
 #https://stackoverflow.com/questions/6867669/getting-pid-of-sshd

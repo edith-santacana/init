@@ -1,8 +1,9 @@
+#!/bin/bash
+
 # Q2 - Identify and display the Ethernet interface characteristics:
 # (a) Identify broadcast address
 # (b) Identify all IP adresses which are part of the same subnet
 
-#!/bin/bash
 
 # 02.a
 interface="en0"

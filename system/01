@@ -1,6 +1,7 @@
+#!/bin/bash
+
 #Q1. In what file can you find the installed version of your Debian?
 
-#!/bin/bash
-cat /etc/debian_version
+echo "Answer: /etc/debian_version"
 
-(or cat/etc/issue)
+# (or cat/etc/issue)

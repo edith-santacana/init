@@ -1,6 +1,6 @@
-#Q11. Name the command that displays the available space left and used on the system
-# in an humanly understandable way
 #!/bin/bash
-df -h --total
 
-# orpydf
+# Q11. Name the command that displays the available space left and used on the system
+# in an humanly understandable way
+
+df -h --total

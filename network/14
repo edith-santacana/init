@@ -1,2 +1,4 @@
-Question: What file contains the local DNS entries?
-/etc/hosts
+#!/bin/bash
+
+# Question 14: What file contains the local DNS entries?
+echo "Answer /etc/hosts"

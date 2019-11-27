@@ -1,6 +1,7 @@
+#!/bin/bash
+
 #Q4. What command gives you the time since your system was last booted?
 
-#!/bin/bash
 last reboot
 
 # uptime https://www.cyberciti.biz/faq/how-do-you-find-the-uptime-of-a-linux-server/

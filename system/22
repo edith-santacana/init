@@ -1,6 +1,7 @@
-Q23- Find the command that add a new local user
-
 #!/bin/bash
+
+#Q22- Find the command that add a new local user
+
 sudo adduser new_user_name
 
 # https://linuxize.com/post/how-to-create-a-sudo-user-on-debian/

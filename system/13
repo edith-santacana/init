@@ -1,5 +1,6 @@
-#Q13. Name the command that find, in real time, currently running processes
 #!/bin/bash
+
+#Q13. Name the command that find, in real time, currently running processes
 top
 
 # or  ps -aux | less 

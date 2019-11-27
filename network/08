@@ -1,8 +1,12 @@
-Question: Find the provider of slash16.org
+#!/bin/bash
 
-1. Use ping to find the IP address. > ping slash16.org
-2. Use WHOIS to find the host information. whois 99.84.231.58
-3. Use a dedicated service to look up details. https://www.whoishostingthis.com/#search=slash16.org
+#Question 8: Find the provider of slash16.org
 
-Ping — A tool that will return the IP address of the web server.
-WHOIS — A lookup that can tell who is hosting my domain, where it was registered and what the Domain Name Server is.
+#1. Use ping to find the IP address. > ping slash16.org
+#2. Use WHOIS to find the host information. whois 99.84.231.58
+#3. Use a dedicated service to look up details. https://www.whoishostingthis.com/#search=slash16.org
+
+echo "Answer: Amazon AWS"
+
+#Ping — A tool that will return the IP address of the web server.
+#WHOIS — A lookup that can tell who is hosting my domain, where it was registered and what the Domain Name Server is.

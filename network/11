@@ -1,76 +1,78 @@
-Q11. Use the output of the previous command to find the name and IP address of the
-device that makes the link between you (local network) and the outside world
+#!/bin/bash
 
-Answer: 10.113.254.254 (10.113.254.254) (line 1)
+# Q11. Use the output of the previous command to find the name and IP address of the
+# device that makes the link between you (local network) and the outside world
 
-traceroute: Warning: slash16.org has multiple addresses; using 13.35.127.115
-traceroute to slash16.org (13.35.127.115), 64 hops max, 52 byte packets
- 1  10.113.254.254 (10.113.254.254)  0.725 ms  6.453 ms  1.707 ms
- 2  192.168.0.2 (192.168.0.2)  0.469 ms  0.402 ms  0.433 ms
- 3  nat (10.90.1.11)  0.211 ms  0.268 ms  0.210 ms
- 4  64.62.224.30 (64.62.224.30)  4.282 ms  0.868 ms  0.860 ms
- 5  64.62.224.253 (64.62.224.253)  3.554 ms  3.597 ms  3.525 ms
- 6  64.62.224.249 (64.62.224.249)  4.075 ms  3.866 ms  3.782 ms
- 7  v1851.core2.fmt2.he.net (216.218.200.77)  3.484 ms  3.280 ms  3.407 ms
- 8  100ge4-1.core4.fmt2.he.net (184.104.192.253)  3.555 ms  3.390 ms
-    100ge10-1.core3.fmt2.he.net (72.52.92.29)  4.854 ms
- 9  100ge9-1.core1.pao1.he.net (184.105.222.90)  4.220 ms
-    100ge10-2.core1.pao1.he.net (184.105.222.6)  4.262 ms
-    100ge9-1.core1.pao1.he.net (184.105.222.90)  4.249 ms
-10  paix01-sfo4.amazon.com (198.32.176.36)  4.072 ms  5.601 ms  4.030 ms
-11  54.240.243.112 (54.240.243.112)  6.007 ms
-    54.240.243.52 (54.240.243.52)  5.554 ms
-    54.240.243.148 (54.240.243.148)  5.424 ms
-12  54.240.243.37 (54.240.243.37)  4.801 ms
-    54.240.243.157 (54.240.243.157)  4.818 ms
-    54.240.243.77 (54.240.243.77)  4.697 ms
-13  205.251.229.80 (205.251.229.80)  4.882 ms  6.411 ms
-    205.251.229.92 (205.251.229.92)  4.917 ms
-14  54.240.242.60 (54.240.242.60)  5.807 ms
-    54.240.242.96 (54.240.242.96)  5.000 ms
-    54.240.242.158 (54.240.242.158)  5.346 ms
-15  52.93.47.125 (52.93.47.125)  4.570 ms  4.462 ms
-    52.93.47.115 (52.93.47.115)  4.857 ms
-16  * * *
-17  * * *
-18  * * *
-19  * * *
-20  * * *
-21  server-13-35-127-115.sfo5.r.cloudfront.net (13.35.127.115)  4.444 ms  4.400 ms  4.525 ms
-e1z3r3p7% host 42.fr
-42.fr has address 163.172.250.13
-42.fr has address 163.172.250.12
-42.fr mail is handled by 10 mx01.42.fr.
-42.fr mail is handled by 10 mx02.42.fr.
+echo "Answer: 10.113.254.254 (10.113.254.254) (line 1)"
+
+# traceroute: Warning: slash16.org has multiple addresses; using 13.35.127.115
+# traceroute to slash16.org (13.35.127.115), 64 hops max, 52 byte packets
+#  1  10.113.254.254 (10.113.254.254)  0.725 ms  6.453 ms  1.707 ms
+#  2  192.168.0.2 (192.168.0.2)  0.469 ms  0.402 ms  0.433 ms
+#  3  nat (10.90.1.11)  0.211 ms  0.268 ms  0.210 ms
+#  4  64.62.224.30 (64.62.224.30)  4.282 ms  0.868 ms  0.860 ms
+#  5  64.62.224.253 (64.62.224.253)  3.554 ms  3.597 ms  3.525 ms
+#  6  64.62.224.249 (64.62.224.249)  4.075 ms  3.866 ms  3.782 ms
+#  7  v1851.core2.fmt2.he.net (216.218.200.77)  3.484 ms  3.280 ms  3.407 ms
+#  8  100ge4-1.core4.fmt2.he.net (184.104.192.253)  3.555 ms  3.390 ms
+#     100ge10-1.core3.fmt2.he.net (72.52.92.29)  4.854 ms
+#  9  100ge9-1.core1.pao1.he.net (184.105.222.90)  4.220 ms
+#     100ge10-2.core1.pao1.he.net (184.105.222.6)  4.262 ms
+#     100ge9-1.core1.pao1.he.net (184.105.222.90)  4.249 ms
+# 10  paix01-sfo4.amazon.com (198.32.176.36)  4.072 ms  5.601 ms  4.030 ms
+# 11  54.240.243.112 (54.240.243.112)  6.007 ms
+#     54.240.243.52 (54.240.243.52)  5.554 ms
+#     54.240.243.148 (54.240.243.148)  5.424 ms
+# 12  54.240.243.37 (54.240.243.37)  4.801 ms
+#     54.240.243.157 (54.240.243.157)  4.818 ms
+#     54.240.243.77 (54.240.243.77)  4.697 ms
+# 13  205.251.229.80 (205.251.229.80)  4.882 ms  6.411 ms
+#     205.251.229.92 (205.251.229.92)  4.917 ms
+# 14  54.240.242.60 (54.240.242.60)  5.807 ms
+#     54.240.242.96 (54.240.242.96)  5.000 ms
+#     54.240.242.158 (54.240.242.158)  5.346 ms
+# 15  52.93.47.125 (52.93.47.125)  4.570 ms  4.462 ms
+#     52.93.47.115 (52.93.47.115)  4.857 ms
+# 16  * * *
+# 17  * * *
+# 18  * * *
+# 19  * * *
+# 20  * * *
+# 21  server-13-35-127-115.sfo5.r.cloudfront.net (13.35.127.115)  4.444 ms  4.400 ms  4.525 ms
+# e1z3r3p7% host 42.fr
+# 42.fr has address 163.172.250.13
+# 42.fr has address 163.172.250.12
+# 42.fr mail is handled by 10 mx01.42.fr.
+# 42.fr mail is handled by 10 mx02.42.fr.
 
 
 
 
-At my place: 
+# At my place: 
 
-router.home.bremond.info (192.168.1.1)
+# router.home.bremond.info (192.168.1.1)
 
->> traceroute slash16.org
-traceroute: Warning: slash16.org has multiple addresses; using 13.35.127.43
-traceroute to slash16.org (13.35.127.43), 64 hops max, 52 byte packets
- 1  router.home.bremond.info (192.168.1.1)  8.204 ms  3.573 ms  1.680 ms
- 2  10.0.0.1 (10.0.0.1)  3.013 ms  7.538 ms  21.127 ms
- 3  96.120.89.253 (96.120.89.253)  15.498 ms  20.037 ms  11.626 ms
- 4  68.87.199.49 (68.87.199.49)  27.825 ms  13.725 ms  9.869 ms
- 5  po-2-rur01.sf19th.ca.sfba.comcast.net (68.87.226.153)  11.871 ms  15.090 ms  10.486 ms
- 6  be-211-rar01.santaclara.ca.sfba.comcast.net (68.87.193.129)  19.203 ms  23.033 ms  36.428 ms
- 7  be-3651-cr02.sunnyvale.ca.ibone.comcast.net (68.86.91.73)  25.583 ms  13.491 ms  14.841 ms
- 8  be-11083-pe02.529bryant.ca.ibone.comcast.net (68.86.84.14)  13.372 ms  14.867 ms  20.772 ms
- 9  as16509-2-c.529bryant.ca.ibone.comcast.net (66.208.229.30)  12.997 ms
-    as16509-1-c.529bryant.ca.ibone.comcast.net (50.242.148.82)  15.420 ms  16.352 ms
-10  * * *
-11  * * *
-12  * 205.251.229.92 (205.251.229.92)  36.822 ms  24.463 ms
-13  * * *
-14  * * *
-15  * * *
-16  * * *
-17  * * *
-18  * * *
-19  * * *
-20  server-13-35-127-43.sfo5.r.cloudfront.net (13.35.127.43)  18.033 ms  23.013 ms  17.021 ms
+# >> traceroute slash16.org
+# traceroute: Warning: slash16.org has multiple addresses; using 13.35.127.43
+# traceroute to slash16.org (13.35.127.43), 64 hops max, 52 byte packets
+#  1  router.home.bremond.info (192.168.1.1)  8.204 ms  3.573 ms  1.680 ms
+#  2  10.0.0.1 (10.0.0.1)  3.013 ms  7.538 ms  21.127 ms
+#  3  96.120.89.253 (96.120.89.253)  15.498 ms  20.037 ms  11.626 ms
+#  4  68.87.199.49 (68.87.199.49)  27.825 ms  13.725 ms  9.869 ms
+#  5  po-2-rur01.sf19th.ca.sfba.comcast.net (68.87.226.153)  11.871 ms  15.090 ms  10.486 ms
+#  6  be-211-rar01.santaclara.ca.sfba.comcast.net (68.87.193.129)  19.203 ms  23.033 ms  36.428 ms
+#  7  be-3651-cr02.sunnyvale.ca.ibone.comcast.net (68.86.91.73)  25.583 ms  13.491 ms  14.841 ms
+#  8  be-11083-pe02.529bryant.ca.ibone.comcast.net (68.86.84.14)  13.372 ms  14.867 ms  20.772 ms
+#  9  as16509-2-c.529bryant.ca.ibone.comcast.net (66.208.229.30)  12.997 ms
+#     as16509-1-c.529bryant.ca.ibone.comcast.net (50.242.148.82)  15.420 ms  16.352 ms
+# 10  * * *
+# 11  * * *
+# 12  * 205.251.229.92 (205.251.229.92)  36.822 ms  24.463 ms
+# 13  * * *
+# 14  * * *
+# 15  * * *
+# 16  * * *
+# 17  * * *
+# 18  * * *
+# 19  * * *
+# 20  server-13-35-127-43.sfo5.r.cloudfront.net (13.35.127.43)  18.033 ms  23.013 ms  17.021 ms

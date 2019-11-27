@@ -1,4 +1,5 @@
+#!/bin/bash
+
 #Q5. Name the command that determines the state of the SSH service.
 
-#!/bin/bash
 systemctl status ssh

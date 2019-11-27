@@ -1,5 +1,9 @@
+#!/bin/bash
+
 # Q8- What file contains the RSA keys of systems that are authorized to connect via SSH?
 
-#!/bin/bash
-~/.ssh/authorized_keys
+#ssh-keygen -t rsa -b 4096 -C something@something.com
+#creates an ssh rsa key in the ~/.ssh directory
+
+echo "ls ~/.ssh"
 # https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys

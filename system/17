@@ -1,7 +1,8 @@
+#!/bin/bash
+
 #Q17. Find the command that allows you to connect via ssh on the VM.(In parallel with
 # the graphic session)
 
-#!/bin/bash
 ssh -p 2222 edith@localhost
 
 # Using the Internet Protocol (IP) address and password for your cloud server, 

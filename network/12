@@ -1,4 +1,5 @@
+#!/bin/bash
+
 # Find the IP that was assigned to you by dhcp server
 
-#!/bin/bash
 ifconfig en0 | grep "inet "
